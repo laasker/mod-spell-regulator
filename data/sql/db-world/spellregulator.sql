@@ -22,6 +22,8 @@ DROP TABLE IF EXISTS `spellregulator`;
 CREATE TABLE `spellregulator` (
   `spellId` int(11) unsigned NOT NULL,
   `percentage` float NOT NULL DEFAULT '100',
+  `comment` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`spellId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 SET FOREIGN_KEY_CHECKS=1;
